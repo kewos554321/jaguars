@@ -1,0 +1,22 @@
+<!-- <jaguars-header></jaguars-header>
+<div>
+  <jaguars-menu></jaguars-menu>
+  <div>
+    <router-outlet></router-outlet>
+  </div>
+</div>
+<jaguars-footer></jaguars-footer> -->
+<div class="layout-wrapper" [ngClass]="containerClass">
+  <jaguars-header></jaguars-header>
+  <div class="layout-sidebar">
+      <jaguars-sidebar></jaguars-sidebar>
+  </div>
+  <div class="layout-main-container">
+      <div class="layout-main">
+          <router-outlet></router-outlet>
+      </div>
+      <jaguars-footer></jaguars-footer>
+  </div>
+  <app-config></app-config>
+  <div class="layout-mask"></div>
+</div>
