@@ -17,6 +17,9 @@ import { AppConfigModule } from './config/config.module';
 import { SidebarComponent } from "./side-menu/sidebar.component";
 import { LayoutComponent } from "./layout.component";
 import { HeaderComponent } from './header/header.component';
+import { ButtonModule } from 'primeng/button';
+import { SplitButtonModule } from 'primeng/splitbutton';
+import { ToggleButtonModule } from 'primeng/togglebutton';
 
 @NgModule({
     declarations: [
@@ -39,6 +42,9 @@ import { HeaderComponent } from './header/header.component';
         InputSwitchModule,
         RippleModule,
         RouterModule,
+        ButtonModule,
+        SplitButtonModule,
+        ToggleButtonModule,
         AppConfigModule
     ],
     exports: [LayoutComponent]
