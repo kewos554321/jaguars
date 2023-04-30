@@ -3,7 +3,7 @@ import { NavigationEnd, Router } from '@angular/router';
 import { Subscription, filter } from 'rxjs';
 import { SidebarComponent } from './side-menu/sidebar.component';
 import { HeaderComponent } from './header/header.component';
-import { LayoutService } from './service/app.layout.service';
+import { LayoutService } from './service/layout.service';
 
 @Component({
   selector: 'jaguars-layout',
