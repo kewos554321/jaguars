@@ -10,6 +10,9 @@ import { InputTextModule } from 'primeng/inputtext';
 import { PasswordModule } from 'primeng/password';
 import { SignInComponent } from './pages/sign-in/sign-in.component';
 import { SignUpComponent } from './pages/sign-up/sign-up.component';
+import { LayoutComponent } from 'src/app/layout/layout.component';
+import { LayoutModule } from 'src/app/layout/layout.module';
+import { SharedModule } from 'src/app/shared/shared/shared.module';
 
 
 @NgModule({
@@ -19,9 +22,10 @@ import { SignUpComponent } from './pages/sign-up/sign-up.component';
     SignUpComponent
   ],
   imports: [
+    SharedModule,
     CommonModule,
     LoginRoutingModule,
-    ButtonModule,
+    // ButtonModule,
     CheckboxModule,
     InputTextModule,
     FormsModule,

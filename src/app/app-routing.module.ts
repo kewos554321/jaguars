@@ -12,9 +12,7 @@ const routes: Routes = [
       {
         path: 'article',
         // canActivate: [AuthGuard],
-        loadChildren: () =>
-          import('src/app/features/article/article.module')
-            .then(m => m.ArticleModule)
+        loadChildren: () => import('src/app/features/article/article.module').then(m => m.ArticleModule)
       }
     ]
   },
